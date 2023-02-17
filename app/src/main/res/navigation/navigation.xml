@@ -51,4 +51,8 @@
         android:id="@+id/aboutFragment"
         android:name="com.example.android.navigation.AboutFragment"
         android:label="@string/app_name"/>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.android.navigation.RulesFragment"
+        android:label="@string/app_name"/>
 </navigation>
