@@ -35,6 +35,9 @@ class GameWonFragment : Fragment() {
         binding.nextMatchButton.setOnClickListener{view: View->
             view.findNavController()
                 .navigate(GameWonFragmentDirections.actionGameWonFragmentToGameFragment())}
+//        val questionsNum = arguments?.getInt("numQuestions")
+//        val correctNum = arguments?.getInt("numCorrect")
+//        Toast.makeText(context, "NumCorrect: ${correctNum}, NumQuestions: ${questionsNum}", Toast.LENGTH_LONG).show()
         val args = GameWonFragmentArgs.fromBundle(requireArguments())
         Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_LONG).show()
         setHasOptionsMenu(true)
